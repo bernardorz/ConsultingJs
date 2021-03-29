@@ -4,7 +4,6 @@ import "./database/"
 import { router } from './routes';
 const app = express();
 
-//PAREI O VIDEO EM 18:17
 
 /*
 GET => Buscar
@@ -17,7 +16,6 @@ PATCH => Alteração especifica
 app.use(express.json())
 
 app.use(router)
-
 
 
 app.listen(3000, () =>{
