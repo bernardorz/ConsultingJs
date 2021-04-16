@@ -1,0 +1,79 @@
+<style>
+
+    .container {
+        width 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .value {
+        padding: 10px;
+        background: #8257e6;
+        color: #fff;
+        border-radius: 0.25rem;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        margin: auto 2.5px;
+    }
+
+    .value:hover{
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+
+    .level {
+        display: flex;
+        margin: 10px;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    .answers{
+        display: flex;
+        margin: 10px;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+</style>
+
+<div class="container">
+
+    <label>
+        Olá <strong>{{variables.name}}</strong> ! tudo bem?
+    </label>
+
+    <h3>{{variables.tittle}}</h3>
+    <br>
+    <strong>{{variables.description}}</strong>
+
+    <div class="level">
+        <span>Pouco provável</span>
+        <span>Muito Provável</span>
+    </div>
+
+    <div class="answers">
+        <a class="value" href="{{variables.link}}/1?u={{variables.user_id}}"> 1</a>
+        <a class="value" href="{{variables.link}}/2?u={{variables.user_id}}"> 2</a>
+        <a class="value" href="{{variables.link}}/3?u={{variables.user_id}}"> 3</a>
+        <a class="value" href="{{variables.link}}/4?u={{variables.user_id}}"> 4</a>
+        <a class="value" href="{{variables.link}}/5?u={{variables.user_id}}"> 5</a>
+        <a class="value" href="{{variables.link}}/6?u={{variables.user_id}}"> 6</a>
+        <a class="value" href="{{variables.link}}/7?u={{variables.user_id}}"> 7</a>
+        <a class="value" href="{{variables.link}}/8?u={{variables.user_id}}"> 8</a>
+        <a class="value" href="{{variables.link}}/9?u={{variables.user_id}}"> 9</a>
+        <a class="value" href="{{variables.link}}/10?u={{variables.user_id}}"> 10</a>
+
+    </div>
+
+    <br>
+    <br>
+
+    <strong>Sua opnião é muito importante para nós</strong>
+    <h3>Equipe <strong>BC</strong></h3>
+
+</div>
